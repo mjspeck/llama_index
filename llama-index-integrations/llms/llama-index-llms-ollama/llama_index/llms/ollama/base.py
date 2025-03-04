@@ -132,7 +132,7 @@ class Ollama(FunctionCallingLLM):
         base_url: str = "http://localhost:11434",
         temperature: float = 0.75,
         context_window: int = DEFAULT_CONTEXT_WINDOW,
-        request_timeout: float = DEFAULT_REQUEST_TIMEOUT,
+        request_timeout: Optional[float] = DEFAULT_REQUEST_TIMEOUT,
         prompt_key: str = "prompt",
         json_mode: bool = False,
         additional_kwargs: Dict[str, Any] = {},
